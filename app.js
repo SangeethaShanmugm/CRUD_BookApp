@@ -11,7 +11,8 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
 //Mongodb Connection
-const MONGO_URL = 'mongodb://127.0.0.1:27017';
+const MONGO_URL = "mongodb+srv://sangeetha:5izgiVWZ2gQqPAaW@cluster0.09bk9ld.mongodb.net/?retryWrites=true&w=majority"
+//'mongodb://127.0.0.1:27017';
 //mongodb://localhost:27017
 async function createConnection() {
     const client = new MongoClient(MONGO_URL);
